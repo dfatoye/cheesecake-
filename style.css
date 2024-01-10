@@ -8,7 +8,7 @@
 
 .main-hero {
   height: 700px;
-  background-image: url('/images/mainBG.png');
+  background-image: url('./images/mainBG.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -109,17 +109,21 @@ nav ul li a {
 }
 
 .hero-lr {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .hero-left {
   width: 600px;
+  padding-top: 50px;
 }
 .hero-right {
   width: auto;
 }
 
 .icing {
-  width: 50px;
+  position: absolute;
+  right: 0;
+  top: -130px;
 }

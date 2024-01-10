@@ -7,8 +7,8 @@
 }
 
 .main-hero {
-  height: 700px;
-  background-image: url('/images/mainBG.png');
+  min-height: 100vh;
+  background-image: url('./images/mainBG.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -29,9 +29,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #523728;
+  background-color: rgba(82, 55, 40, 0.7);
   border-radius: 15px;
-  padding: 20px 60px;
+  padding: 15px 60px;
 }
 
 nav ul li {
@@ -39,52 +39,66 @@ nav ul li {
   justify-content: center;
   display: inline;
   list-style: none;
+  font-family: 'Inter', sans-serif;
   margin: 10px 15px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: #fff;
+  font-weight: bold;
 }
 
-.heading-style {
+li a:hover {
+  background-color: #fff;
+  color: #6f4436;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-family: 'Inika', sans-serif;
+  color: rgba(82, 55, 40);
   margin-left: 40px;
-  font-size: 3em;
-  line-height: 1.2;
-  color: #523728;
+  font-size: 2.5em;
+  margin-top: 100px;
+  font-weight: 200;
 }
 
 .p1 {
   margin-top: 30px;
   margin-left: 40px;
+  font-size: large;
   color: #523728;
 }
-.p2 {
-  margin-left: 40px;
-  color: #523728;
-}
+
 .btn-container {
+  display: flex;
   margin-left: 40px;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .sign-up {
-  background-color: #ffedf0;
+  background-color: transparent;
   color: #523728;
   border-radius: 50px;
   margin-right: 100px;
   font-size: 1em;
-  padding: 25px 50px;
+  padding: 20px 35px;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
   transition-duration: 0.4s;
+  z-index: 1;
 }
 .sign-up:hover {
-  background-color: lightcoral;
-}
-.get-started-btn {
   background-color: #523728;
   color: #fff;
-  padding: 25px 40px;
+}
+
+.get-started-btn {
+  background-color: rgba(82, 55, 40, 0.8);
+  color: #fff;
+  padding: 17px 30px;
   margin-right: 20px;
   border-radius: 50px;
   font-size: 1em;
@@ -92,34 +106,45 @@ nav ul li a {
   transition-duration: 0.4s;
 }
 .get-started-btn:hover {
-  background-color: #ffedf0;
+  background-color: transparent;
   color: #523728;
 }
 
 .watch-btn {
-  padding: 25px 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 17px 40px;
   border-radius: 50px;
+  color: #523728;
+  border: 1px solid #523728;
   font-size: 1em;
   cursor: pointer;
+  background-color: transparent;
   transition-duration: 0.4s;
 }
 
 .watch-btn:hover {
-  background-color: lightcoral;
+  background-color: #523728;
+  color: #fff;
 }
 
 .hero-lr {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .hero-left {
   width: 600px;
+  padding-bottom: 50px;
 }
 .hero-right {
   width: auto;
 }
 
 .icing {
-  width: 50px;
+  right: 0;
+  top: -150px;
 }

@@ -240,14 +240,14 @@ h1 {
   font-size: 64px;
 }
 
-.product-cards {
+.menu-cards {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.product-cards .card {
+.menu-cards .card {
   width: 355px;
   height: 351px;
   border: 1px solid;
@@ -257,7 +257,12 @@ h1 {
   box-shadow: 0 5px 5px;
 }
 
-.product-cards .card img {
+.menu-cards .card:hover {
+  padding: 1px solid;
+  transition-duration: 0.4s;
+}
+
+.menu-cards .card img {
   max-width: 100%;
   margin-left: 70px;
   height: 50%;
@@ -265,7 +270,7 @@ h1 {
   justify-content: center;
 }
 
-.product-cards .card h4 {
+.menu-cards .card h4 {
   font-family: 'Inika', sans-serif;
   font-weight: 700px;
   font-size: 25px;
@@ -274,7 +279,7 @@ h1 {
   margin-left: 15px;
 }
 
-.product-cards .card p {
+.menu-cards .card p {
   font-family: 'Recursive', sans-serif;
   font-weight: 400;
   font-size: 13px;
@@ -284,7 +289,7 @@ h1 {
   font-size: small;
 }
 
-.product-cards .money-rate {
+.menu-cards .money-rate {
   margin-top: 20px;
   display: flex;
   align-items: center;
@@ -319,7 +324,9 @@ h1 {
 }
 .view-more p a:hover {
   color: black;
+  transition-duration: 0.4s;
 }
+
 .blog-section {
   background-color: #fff8e1;
   width: 1440px;

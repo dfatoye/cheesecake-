@@ -160,14 +160,14 @@ h1 {
 }
 
 .about-l {
-  width: 600px;
-  padding-bottom: 50px;
+  /* width: 600px; */
+  margin-bottom: 50px;
   margin-left: 40px;
 }
 
 .about-r {
   width: auto;
-  margin-right: 500px;
+  margin-right: 200px;
 }
 
 .about-img {
@@ -175,7 +175,7 @@ h1 {
   height: 400px;
 }
 
-section h2 {
+.we-love {
   font-size: 3em;
   font-weight: 100;
   font-family: 'Inika', sans-serif;
@@ -193,7 +193,7 @@ section h2 {
 }
 
 .read {
-  margin-top: 50px;
+  margin-top: 20px;
   padding: 15px 40px;
   border-radius: 50px;
   color: #fff;
@@ -207,4 +207,77 @@ section h2 {
 .read:hover {
   background-color: #fff8e1;
   color: #523728;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgba(82, 55, 40);
+}
+
+.menu-header > h2 {
+  color: #fff8e1;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Inika', sans-serif;
+  font-weight: 100;
+}
+
+.product-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product-cards .card {
+  width: 300px;
+  height: 300px;
+  border: 1px solid;
+  border-radius: 15px;
+  margin-right: 40px;
+  background-color: #fff8e1;
+  box-shadow: 0 5px 5px;
+}
+
+.product-cards .card img {
+  max-width: 100%;
+  margin-left: 70px;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.product-cards .card h4 {
+  font-family: 'Inika', sans-serif;
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+.product-cards .card p {
+  margin-top: 5px;
+  margin-left: 15px;
+  font-size: small;
+}
+
+.product-cards .money-rate {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.currency {
+  color: #53a623;
+}
+
+.rating {
+  color: #523728;
+  margin-right: 30px;
+}
+
+.view-more {
+  margin-top: 30px;
+  color: #fff8e1;
 }

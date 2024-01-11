@@ -1,12 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&family=Poppins:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&family=Outfit:wght@300;400;500;700&family=Poppins:wght@100;400;700&family=Recursive:wght@300;500;700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  /* max-width: 1440px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /*center page*/
+}
 
 .main-hero {
+  width: 1440px;
   min-height: 50vh;
   background-image: url('./images/mainBG.png');
   background-position: center;
@@ -60,9 +69,10 @@ h1 {
   font-family: 'Inika', sans-serif;
   color: rgba(82, 55, 40);
   margin-left: 40px;
-  font-size: 2.5em;
+  font-size: 69px;
   margin-top: 100px;
-  font-weight: 200;
+  font-weight: 400;
+  line-height: 82px;
 }
 
 .p1 {
@@ -146,15 +156,17 @@ h1 {
 }
 
 .icing {
-  right: 0;
-  top: -150px;
+  width: 773px;
+  right: 743px;
+  top: 19px;
 }
 
 .about-us {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 70vh;
+  width: 1440px;
+  height: 587px;
   /* max-width: 1440px; */
   background-color: #fff8e1;
 }
@@ -176,10 +188,11 @@ h1 {
 }
 
 .we-love {
-  font-size: 3em;
-  font-weight: 100;
+  font-size: 60px;
+  font-weight: 400;
   font-family: 'Inika', sans-serif;
   color: #220404;
+  line-height: 78.18px;
 }
 
 .p-1 {
@@ -212,8 +225,8 @@ h1 {
 .menu {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
+  width: 1440px;
+  min-height: 70vh;
   background-color: rgba(82, 55, 40);
 }
 
@@ -221,8 +234,10 @@ h1 {
   color: #fff8e1;
   margin-top: 50px;
   margin-bottom: 50px;
+  text-align: center;
   font-family: 'Inika', sans-serif;
-  font-weight: 100;
+  font-weight: lighter;
+  font-size: 64px;
 }
 
 .product-cards {
@@ -233,8 +248,8 @@ h1 {
 }
 
 .product-cards .card {
-  width: 300px;
-  height: 300px;
+  width: 355px;
+  height: 351px;
   border: 1px solid;
   border-radius: 15px;
   margin-right: 40px;
@@ -252,11 +267,18 @@ h1 {
 
 .product-cards .card h4 {
   font-family: 'Inika', sans-serif;
+  font-weight: 700px;
+  font-size: 25px;
+  line-height: 32.57px;
   margin-top: 30px;
   margin-left: 15px;
 }
 
 .product-cards .card p {
+  font-family: 'Recursive', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15.6px;
   margin-top: 5px;
   margin-left: 15px;
   font-size: small;
@@ -270,14 +292,123 @@ h1 {
 }
 .currency {
   color: #53a623;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25.41px;
 }
 
 .rating {
   color: #523728;
   margin-right: 30px;
+  /* width: 15.9px; */
+  height: 14.52px;
 }
 
 .view-more {
   margin-top: 30px;
   color: #fff8e1;
+  text-align: right;
+  margin-top: 30px;
+  margin-right: 140px;
+}
+
+.view-more p a {
+  text-decoration: none;
+  color: #fff;
+}
+.view-more p a:hover {
+  color: black;
+}
+.blog-section {
+  background-color: #fff8e1;
+  width: 1440px;
+  /* min-height: 50vh; */
+  text-align: center;
+}
+
+.blog-section h2 {
+  font-family: 'Inika', sans-serif;
+  font-weight: 400;
+  line-height: 83.39px;
+  font-size: 64px;
+  margin-top: 50px;
+  color: #734b33;
+}
+
+.blog-section h5 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24px;
+  color: #734b33;
+}
+
+.blog-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.blog-cards img {
+  width: 250px;
+  height: 250px;
+  border-radius: 16px;
+  border-top: 100px;
+}
+
+.blog-cards .blog-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 347.56px;
+  height: 551px;
+  border: 1px solid;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: #fff8e1;
+  box-shadow: 0 5px 5px;
+}
+
+.blog-card .p-one {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22.68px;
+  color: #bb6939;
+}
+
+.blog-card h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #734b33;
+}
+
+.blog-card p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 12.5px;
+  line-height: 18.75px;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.blog-card a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500px;
+  font-size: 15.5px;
+  line-height: 23.25px;
+  color: #734b33;
+  text-decoration: none;
+}
+
+.more-blog {
+  margin-left: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15.5px;
+  line-height: 23.25px;
 }

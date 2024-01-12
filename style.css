@@ -341,9 +341,8 @@ h1 {
   justify-content: center;
   width: 340px;
   box-shadow: -2px -9px 42px 0px #4d422c61;
-  /* height: 500px; */
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 0px 50px;
+  padding-bottom: 20px;
   border-radius: 19px;
 }
 .headers {
@@ -381,13 +380,16 @@ h1 {
 .cards img {
   width: 259px;
   height: 250px;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 20px;
   object-fit: cover;
 }
 
 .blog-texts {
+  display: flex;
+  flex-direction: column;
   text-align: left;
+  gap: 10px;
 }
 
 .blog-texts .p-uno {
@@ -402,8 +404,8 @@ h1 {
   font-family: 'Poppins', sans-serif;
   color: #734b33;
   font-weight: 600;
-  font-size: 22px;
-  line-height: 33px;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .blog-texts .p-trio {
@@ -413,9 +415,9 @@ h1 {
   font-size: 12.5px;
   line-height: 18.75px;
 }
-.card-1 .read-more {
+/* .card-1 .read-more {
   margin-top: 25px;
-}
+} */
 
 .read-more {
   font-family: 'Poppins', sans-serif;

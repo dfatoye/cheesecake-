@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+form<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,6 +15,7 @@
   </head>
   <body>
     <main>
+      <!-- HERO SECTION -->
       <div class="main-hero">
         <header class="flex-container">
           <img class="logo" src="/images/logo.png" alt="company logo" />
@@ -59,6 +60,7 @@
       <section class="about-l">
         <img class="about-img" src="./images/about.png" alt="about us image" />
       </section>
+      <!-- ABOUT SECTION -->
       <section class="about-r">
         <h2 class="we-love">We Love Cheesecake</h2>
         <p class="p-1">Discover Our Cheesecake Story</p>
@@ -74,7 +76,7 @@
         <button class="read">Read More</button>
       </section>
     </section>
-
+    <!-- MENU SECTION -->
     <section class="menu">
       <div class="menu-header">
         <h2>Our Menu</h2>
@@ -139,55 +141,124 @@
         </p>
       </div>
     </section>
-    <section class="blog-section">
-      <div>
+    <!-- BLOG SECTION -->
+    <section class="blog-container">
+      <div class="headers">
         <h2>Our Blog</h2>
-        <h5>Our Recent Posts</h5>
+        <h3>Our Recent Posts</h3>
       </div>
-      <section class="blog-cards">
-        <section class="blog-card card-1">
-          <img src="./images/blog1.png" alt="image of 2 chefs" />
-          <p class="p-one">23 Nov, 2023 / Cheesecake</p>
-          <h3>A Peek Behind the Cheesecake Curtain</h3>
-          <p>
-            Step into our cheesecake haven, where the magic unfolds behind the
-            scenes, whisking dreams into reality. Our kitchen is a symphony and
-            very...
-          </p>
-          <section class="more-blog">
-            <a href="#blog">Read More</a>
-          </section>
-        </section>
-        <section class="blog-card card-2">
-          <img
-            src="./images/blog2.png"
-            alt="image of cheese cake and strawberries"
-          />
-          <p class="p-one">18 July, 2023 / Cheesecake</p>
-          <h3>Low-Sugar & Gluten-Free Cheesecakes</h3>
-          <p>
-            Welcome to our guilt-free indulgence zone, where we're redefining
-            the art of cheesecake with our delectable low-sugar...
-          </p>
-          <section class="more-blog">
-            <a href="">Read More</a>
-          </section>
-        </section>
-        <section class="blog-card card-3">
-          <img src="./images/blog3.png" alt="image of a chef holding a fork" />
-          <p class="p-one">1 January, 2024 / Cheesecake</p>
-          <h3>Sweet Words - Customer Reviews of Cheesecakes</h3>
-          <p>
-            Indulge in the rich tapestry of heartfelt stories within "Sweet
-            Words." This curated collection of customer reviews offers a glimpse
-            into the joy...
-          </p>
-          <section class="more-blog">
-            <a href="#blog">Read More</a>
-          </section>
-        </section>
-      </section>
+      <div class="blog-cards">
+        <!-- card1 -->
+        <div class="cards card-1">
+          <div class="blog-img">
+            <img class="img1-3" src="./images/blog1.png" alt="" />
+          </div>
+          <div class="blog-texts">
+            <p class="p-uno">23 Nov, 2023 / Cheesecake</p>
+            <p class="p-duo">A Peek Behind the Cheesecake Curtain</p>
+            <p class="p-trio">
+              Step into our cheesecake haven, where the magic unfolds behind the
+              scenes, whisking dreams into reality. Our kitchen is a symphony
+              and very...
+            </p>
+            <div class="read-more">
+              <a href="#blog">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="cards card-2">
+          <div class="blog-img">
+            <img src="./images/blog2.png" alt="" />
+          </div>
+          <div class="blog-texts">
+            <p class="p-uno">23 Nov, 2023 / Cheesecake</p>
+            <p class="p-duo">Low-Sugar & Gluten-Free Cheesecakes</p>
+            <p class="p-trio">
+              Welcome to our guilt-free indulgence zone, where we're redefining
+              the art of cheesecake with our delectable low-sugar...
+            </p>
+            <div class="read-more">
+              <a href="#blog">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="cards card-3">
+          <div class="blog-img">
+            <img class="img1-3" src="./images/blog3.png" alt="" />
+          </div>
+          <div class="blog-texts">
+            <p class="p-uno">23 Nov, 2023 / Cheesecake</p>
+            <p class="p-duo">Sweet Words - Customer Reviews of Cheesecakes</p>
+            <p class="p-trio">
+              Indulge in the rich tapestry of heartfelt stories within "Sweet
+              Words." This curated collection of customer reviews offers a
+              glimpse into the joy...
+            </p>
+            <div class="read-more">
+              <a href="#blog">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    <!-- CONTACT US SECTION -->
+    <section class="contact-section">
+      <div class="contact-left">
+        <h2>Contact US</h2>
+        <h3>
+          Need to get in touch with us? Either fill out the form with your
+          inquiry or find the department!
+        </h3>
+        <div class="contact-img">
+          <img src="./images/contactus-image.png" alt="" />
+        </div>
+
+        <div class="icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+
+        <p>
+          Copyright <span><i class="fa-regular fa-copyright"></i></span> 2024
+          Dscode | All rights reserved
+        </p>
+      </div>
+      <!-- contact right -->
+      <div class="contact-container">
+        <form action="">
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            required
+            class="contact-inputs"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+            class="contact-inputs"
+          />
+          <textarea
+            name="message"
+            id=""
+            cols="60"
+            rows="5"
+            placeholder="Your message..."
+            required
+            class="contact-inputs"
+          ></textarea>
+
+          <button type="submit" class="contact-us-btn">Contact us now</button>
+        </form>
+      </div>
+    </section>
+
     <!-- <script src="script.js"></script> -->
   </body>
 </html>
